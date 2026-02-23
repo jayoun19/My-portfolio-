@@ -1,11 +1,11 @@
 # 👋 Hi, I'm Jaehyun
 
-🎓 Student Developer| 🚀 Building real-world projects while learning
+🎓 Student | 🚀 Building real-world projects while learning
 
 ---
 
 ## 🧑‍💻 About Me
-I am a passionate student developer focused on improving my programming, problem-solving, and system design skills.  
+I am a passionate student focused on improving my programming, problem-solving, and system design skills.  
 I enjoy building practical applications, learning modern technologies, and collaborating on meaningful projects.
 
 - 🌱 Currently learning: **Web Development, Databases,Javascript, UI/UX]**
