@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" checked />
+            <div class="slider round">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </div>
+        </label>
+    </div>
+
+   
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo"><span>Portfolio</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="reveal">I'm Jaehyun 
+                    <span class="gradient-text">BSIT</span> student</h1>
+                <p class="reveal">I am a passionate student focused on improving my programming, problem-solving, and system design skills.</p>
+                <div class="hero-btns reveal">
+                    <a href="#projects" class="btn btn-primary">Projects</a>
+                    <a href="#contact" class="btn btn-glass">Contacts</a>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-info reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <p> ilove cats, macha, petlover mahilig sa bilat</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <h3>1</h3>
+                            <p>Projects</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>20</h3>
+                            <p>Years old</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills-grid reveal">
+                    <div class="skill-item"><i class="fab fa-html5"></i><span>HTML5</span></div>
+                    <div class="skill-item"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+                    <div class="skill-item"><i class="fab fa-js"></i><span>JavaScript</span></div>
+                    <div class="skill-item"><i class="fab fa-php"></i><span>Php</span></div>
+                    <div class="skill-item"><i class="fab fa-react"></i><span>React</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title center">Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="images/trackerr.jfif" alt="Project">
+                    </div>
+                    <div class="project-overlay">
+                        <h3>Progress Tracker</h3>
+                        <p>This is my first website using firebase</p>
+                        <a href="#" class="btn-sm">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2 class="section-title"><i class="far fa-image"></i> Gallery </h2>
+        </div>
+        <div class="gallery-slider">
+            <div class="gallery-track">
+                <div class="gallery-item"><img src="images/asd.jpg" alt="1"></div>
+                <div class="gallery-item"><img src="images/tej.jpg" alt="2"></div>
+                <div class="gallery-item"><img src="images/jae.png" alt="3"></div>
+                <div class="gallery-item"><img src="images/qq.png" alt="4"></div>
+                <div class="gallery-item"><img src="images/asd.png" alt="5"></div>
+
+                <!--loop -->
+                <div class="gallery-item"><img src="images/asd.jpg" alt="1"></div>
+                <div class="gallery-item"><img src="images/tej.jpg" alt="2"></div>
+                <div class="gallery-item"><img src="images/jae.png" alt="3"></div>
+                <div class="gallery-item"><img src="images/qq.png" alt="4"></div>
+                <div class="gallery-item"><img src="images/asd.png" alt="5"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="glass-form-container reveal">
+                <h2 class="section-title">Contact Me</h2>
+                <form class="contact-form">
+                    <div class="input-group">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chatbot UI -->
+    <div class="chatbot-container">
+        <div class="chatbot-button" id="chatbot-toggle">
+            <i class="fas fa-comment-dots"></i>
+        </div>
+        <div class="chatbot-window" id="chatbot-window">
+            <div class="chatbot-header">
+                <div class="bot-info">
+                    <div class="bot-avatar">J</div>
+                    <span>Jaehyun Chatbot</span>
+                </div>
+                <button id="close-chat"><i class="fas fa-times"></i></button>
+            </div>
+            <div class="chatbot-messages" id="chat-messages">
+                <div class="message bot">Hi! I'm jaehyun virtual assistant. How can I help you today?</div>
+            </div>
+            <div class="chatbot-input">
+                <input type="text" id="user-input" placeholder="Type a message...">
+                <button id="send-message"><i class="fas fa-paper-plane"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; </p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
